@@ -117,8 +117,23 @@
     letter-spacing: 2px;
     color: #e3ffa1;
     margin-top: 10px;
-	flex-direction: column;/*to check can delete
 }
+
+@media (max-width: 768px) {
+
+  .sub {
+    display: flex;
+    justify-content: center;   /* center the whole row */
+    align-items: center;
+    gap: 8px;                  /* space around bullets */
+    text-align: center;
+    white-space: nowrap;       /* FORCE one row */
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+  }
+}
+
+	
 
 .letter-shine {
     white-space: normal;
@@ -470,6 +485,7 @@ Our skilled polishing specialists use premium compounds, and proven techniques t
 	</body>
 
 </html>
+
 
 
 
