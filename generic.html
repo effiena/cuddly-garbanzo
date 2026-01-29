@@ -18,24 +18,23 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<!--<span class="shine title-font">SHINEMASTER</span>
-			  	 		<span class="sub">Auto</span>-->
-					<a href="#" style="display:flex; align-items:center; gap:15px;">
- 							 <img src="images/Fresh_Modern_Logo_of_ShineMaster_Auto__1_-removebg-preview.png" 
-   							    style="width:200px;">
-							<!-- <h1 class="shine title-font">ShineMaster Auto</h1>-->
-							<h1 class="title-font letter-shine">
- 								<span class="word">
-   								<span>S</span><span>h</span><span>i</span><span>n</span><span>e</span><span>M</span><span>a</span><span>s</span><span>t</span><span>e</span><span>r</span>
-  								</span>
-  								<span class="word space">&nbsp;</span>
- 								<span class="word">
- 								<span>A</span><span>u</span><span>t</span><span>o</span></span>
-  								</span>
-							</h1>
+  <a href="#" class="intro-brand">
+    <img src="images/Fresh_Modern_Logo_of_ShineMaster_Auto__1_-removebg-preview.png" alt="Logo">
 
-								</a>
-								<p class="sub">POLISHING • COATING • WAXING • WASH</p>
+    <h1 class="title-font letter-shine">
+      <span class="main-word">
+        <span>S</span><span>h</span><span>i</span><span>n</span><span>e</span>
+        <span>M</span><span>a</span><span>s</span><span>t</span><span>e</span><span>r</span>
+      </span>
+      <span class="sub-word">
+        <span>A</span><span>u</span><span>t</span><span>o</span>
+      </span>
+    </h1>
+  </a>
+
+  <p class="sub">POLISHING • COATING • WAXING • WASH</p>
+</div>
+
 								<!--/* MAIN TITLE STYLE */-->
 <style>
 /* ===============================
@@ -137,36 +136,74 @@
 
 @media (max-width: 768px) {
 
-  /* Stack logo and title */
-  #intro a {
+  /* CENTER EVERYTHING */
+  #intro {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 10px;
+    padding: 10px;
   }
 
-  /* Reduce spacing so letters don’t explode */
+  /* STACK LOGO + TITLE */
+  .intro-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: fit-content; /* shrink to match title width */
+    max-width: 90%;
+  }
+
+  /* LOGO SIZE */
+  .intro-brand img {
+    width: 120px; /* mobile-friendly */
+    max-width: 70%;
+    height: auto;
+  }
+
+  /* TITLE SHINEMASTER + AUTO stacked */
+  .letter-shine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 280px; /* same width as subtext line approx */
+  }
+
+  .main-word {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sub-word {
+    display: flex;
+    justify-content: center;
+    font-size: 0.7em;
+    margin-top: 4px;
+    letter-spacing: 2.5px;
+  }
+
+  /* TITLE FONT SIZE */
   .title-font {
-    letter-spacing: 1.5px;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    letter-spacing: 1.2px;
   }
 
-  /* Prevent single-letter line breaks */
-  .letter-shine span {
-    white-space: nowrap;
-  }
-
-  /* Subtext sizing */
+  /* SUBTEXT LINE */
   .sub {
     font-size: 0.9rem;
     letter-spacing: 1px;
+    margin-top: 8px;
     text-align: center;
+    width: 280px; /* same width as title block */
   }
 }
 
-@media (max-width: 480px) {
-  .letter-shine {
-    flex-direction: column;
-  }
-}
 
 
 
@@ -321,4 +358,5 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+
 </html>
