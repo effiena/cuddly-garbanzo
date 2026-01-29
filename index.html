@@ -137,25 +137,27 @@
 
 @media (max-width: 768px) {
 
-  /* Center the TITLE block itself */
+  /* Stack words vertically */
   .letter-shine {
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    margin: 0 auto;
   }
 
-  /* Keep each word together AND centered */
+  /* Center each word */
   .letter-shine .word {
     justify-content: center;
   }
 
-  /* Slight spacing polish */
-  .title-font {
-    letter-spacing: 1.3px;
+  /* Make AUTO slightly smaller & spaced nicely */
+  .sub-word {
+    margin-top: 6px;
+    font-size: 0.75em;
+    letter-spacing: 3px;
   }
 }
+
 
 
 </style>
@@ -429,6 +431,7 @@ Our skilled polishing specialists use premium compounds, and proven techniques t
 	</body>
 
 </html>
+
 
 
 
