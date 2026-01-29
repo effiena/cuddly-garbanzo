@@ -29,7 +29,7 @@
    								<span>S</span><span>h</span><span>i</span><span>n</span><span>e</span><span>M</span><span>a</span><span>s</span><span>t</span><span>e</span><span>r</span>
   								</span>
   								<span class="word space">&nbsp;</span>
- 								<span class="word">
+ 								<span class="word auto-word">
  								<span>A</span><span>u</span><span>t</span><span>o</span></span>
   								
 							</h1>
@@ -86,18 +86,6 @@
   line-height: 1.2;
   text-align: center;
 }
-
-/*@media (max-width: 768px) {
-  #intro a {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .title-font {
-    font-size: 2.2rem;
-    letter-spacing: 1.5px;
-  }
-}*/
 
 /* CINEMATIC METALLIC SHINE */
 @keyframes letterShine {
@@ -197,6 +185,28 @@
     flex-direction: column;
     justify-content: center;
   }
+}
+
+@media (max-width: 768px) {
+	.auto-word {
+		margin-top: -0.1em;
+		front-size: 0.85em;
+		letter-spacing: 3px;
+	}
+}
+
+
+
+
+	
+@media (max-width: 768px) {
+	.letter-shine{
+		gap: 0.15em; /*control space between words*/
+
+	.letter-shine .word{
+		margin: 0;
+		padding: 0;
+	}
 }
 </style>
 
@@ -469,6 +479,7 @@ Our skilled polishing specialists use premium compounds, and proven techniques t
 	</body>
 
 </html>
+
 
 
 
