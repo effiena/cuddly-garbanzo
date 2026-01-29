@@ -29,9 +29,9 @@
    								<span>S</span><span>h</span><span>i</span><span>n</span><span>e</span><span>M</span><span>a</span><span>s</span><span>t</span><span>e</span><span>r</span>
   								</span>
   								<span class="word space">&nbsp;</span>
- 									<span class="word">
- 									<span>A</span><span>u</span><span>t</span><span>o</span></span>
-  									</span>
+ 								<span class="word">
+ 								<span>A</span><span>u</span><span>t</span><span>o</span></span>
+  								
 							</h1>
 
 								</a>
@@ -137,38 +137,37 @@
 
 @media (max-width: 768px) {
 
-  /* Stack logo and title */
+  /* Center everything in intro */
+  #intro {
+    text-align: center;
+  }
+
+  /* Force logo + title to stack and center */
   #intro a {
+    display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
   }
 
-  /* Reduce spacing so letters don’t explode */
+  /* Center the title itself */
+  .letter-shine {
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Slightly smaller, cleaner title for phones */
   .title-font {
-    letter-spacing: 1.5px;
     font-size: 2rem;
+    letter-spacing: 1.2px;
   }
 
-  /* Prevent single-letter line breaks */
-  .letter-shine span {
-    white-space: nowrap;
-  }
-
-  /* Subtext sizing */
+  /* Center sub text */
   .sub {
-    font-size: 0.9rem;
-    letter-spacing: 1px;
     text-align: center;
   }
 }
-
-@media (max-width: 480px) {
-  .letter-shine {
-    flex-direction: column;
-  }
-}
-
-
 
 </style>
 
@@ -441,3 +440,4 @@ Our skilled polishing specialists use premium compounds, and proven techniques t
 	</body>
 
 </html>
+
