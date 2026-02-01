@@ -40,7 +40,227 @@
 								</a>
 								<p class="sub">POLISHING • COATING • WAXING • WASH</p>
 								<!--/* MAIN TITLE STYLE */-->
+<style>
 
+
+.letter-shine span.word span {
+  display: inline-block;
+  color: #5af4ec7b;
+  text-shadow: none;
+  animation: letterShine 2s ease-in-out infinite;
+}
+
+/* Stagger each letter by index using nth-child */
+.letter-shine span.word span:nth-child(1) { animation-delay: 0s; }
+.letter-shine span.word span:nth-child(2) { animation-delay: 0.1s; }
+.letter-shine span.word span:nth-child(3) { animation-delay: 0.2s; }
+.letter-shine span.word span:nth-child(4) { animation-delay: 0.3s; }
+/* Add more for all letters as needed */
+
+@keyframes letterShine {
+  0%, 90%, 100% { color: #5af4ec7b; text-shadow: none; }
+  50% {
+    color: #b4f899;
+    text-shadow:
+      0 0 6px rgba(200,220,255,0.35),
+      0 0 14px rgba(150,190,255,0.3),
+      0 0 28px rgba(120,170,255,0.25);
+  }
+}
+
+	/* LOGO BASE */
+.logo-premium {
+  width: 160px;        /* desktop default */
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 0;      /* PREVENT flex from stretching it */
+}
+
+/* LARGE DESKTOP */
+@media (min-width: 1200px) {
+  .logo-premium {
+    width: 180px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .logo-premium {
+    width: 130px;
+  }
+}
+
+	img {
+  height: auto;
+}
+
+/* ===============================
+   ULTRA LUXURY LETTER SHINE
+   =============================== */
+/* MAIN TITLE */
+.title-font {
+    font-size: clamp(1.8rem, 6vw, 3rem);
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #97e4f9;
+    position: relative;
+    line-height: 1.2;
+    text-align: center;
+}
+
+
+/* LETTER SETUP */
+.letter-shine span {
+    display: inline-block;
+    animation: letterShine 15s ease-in-out infinite;
+}
+
+/* Prevent letter scattering */
+.letter-shine {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Each WORD stays together */
+.letter-shine .word {
+  display: inline-flex;
+  white-space: nowrap;
+}
+
+/* Space between words */
+.letter-shine .space {
+  width: 0.5em;
+}
+
+/* Responsive font */
+.title-font {
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  letter-spacing: 2px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* CINEMATIC METALLIC SHINE */
+@keyframes letterShine {
+    0%, 90%, 100% {
+        color: #5af4ec7b;
+        text-shadow: none;
+    }
+
+    45% {
+        color: #b4f899;
+        text-shadow:
+            0 0 6px rgba(200,220,255,0.35),
+            0 0 14px rgba(150,190,255,0.3),
+            0 0 28px rgba(120,170,255,0.25);
+    }
+}
+
+/* HOVER — PREMIUM INTERACTION */
+.title-font:hover span {
+    text-shadow:
+        0 0 10px rgba(220,240,255,0.6),
+        0 0 22px rgba(180,210,255,0.4),
+        0 0 40px rgba(140,180,255,0.3);
+}
+
+/* SUBTEXT */
+.sub {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: #e3ffa1;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+
+  .sub {
+    display: flex;
+    justify-content: center;   /* center the whole row */
+    align-items: center;
+    gap: 8px;                  /* space around bullets */
+    text-align: center;
+    white-space: nowrap;       /* FORCE one row */
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+  }
+}
+
+	
+
+.letter-shine {
+    white-space: normal;
+}
+
+@media (max-width: 768px) {
+
+  /* Stack words vertically */
+  .letter-shine {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Center each word */
+  .letter-shine .word {
+    justify-content: center;
+  }
+
+  /* Make AUTO slightly smaller & spaced nicely */
+  .sub-word {
+    margin-top: 6px;
+    font-size: 0.75em;
+    letter-spacing: 3px;
+
+  }
+}
+
+	/* ===============================
+   INTRO CENTER FIX (MOBILE)
+   =============================== */
+
+.intro-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+  #intro {
+    text-align: center;
+  }
+
+  .intro-brand {
+    flex-direction: column;   /* stack logo + text */
+    gap: 10px;
+  }
+
+  .intro-brand img {
+    margin: 0 auto;
+    width: 160px; /* slightly smaller for phone */
+  }
+
+  .sub {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #intro {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+
+</style>
 
 							<p>We Restore, We Protect & We Make Sure Your Car Shines Like New
 							</a></p>
@@ -311,6 +531,7 @@ Our skilled polishing specialists use premium compounds, and proven techniques t
 	</body>
 
 </html>
+
 
 
 
