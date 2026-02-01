@@ -315,61 +315,6 @@
   }
 }
 
-	.actions.special .button.large {
-  position: relative; /* make it a container for the car */
-  overflow: hidden;   /* hide the car outside */
-}
-
-.actions.special .button.large .car {
-  position: absolute;
-  left: -30px; /* start off the button */
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.2rem; /* car size */
-  animation: carMove 6s linear infinite;
-}
-
-@keyframes carMove {
-  0% { left: -30px; }
-  50% { left: calc(100% + 30px); } /* move across button */
-  100% { left: -30px; }            /* loop back */
-}
-
-/* Reset default spacing in header */
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0;          /* remove extra padding */
-    gap: 10px;            /* vertical space between elements (adjust as needed) */
-}
-
-/* Remove extra margin from paragraph */
-header p {
-    margin: 0;
-    text-align: center;   /* keeps text centered */
-}
-
-/* Remove default <ul> spacing */
-header ul.actions {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-/* Remove spacing from <li> */
-header ul.actions li {
-    margin: 0;
-    padding: 0;
-}
-
-/* Style the arrow button */
-header ul.actions li a.button.icon.fa-arrow-down {
-    margin-top: 5px;   /* smaller gap above the arrow */
-    padding: 0;
-}
-
 
 </style>
 						<p>We Restore, We Protect & We Make Sure Your Car Shines Like New
@@ -641,6 +586,7 @@ Our skilled polishing specialists use premium compounds, and proven techniques t
 
 	</body>
 </html>
+
 
 
 
