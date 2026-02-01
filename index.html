@@ -259,6 +259,56 @@
   }
 }
 
+/* =====================================
+   FLASHY LIME–PURPLE BOOK APPOINTMENT CTA
+   (NO EXTERNAL CSS CHANGES)
+   ===================================== */
+
+.actions.special .button.large {
+  background: linear-gradient(135deg, #a8ff00, #7b00ff) !important;
+  color: #0b0b0b !important;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  padding: 1.3rem 3.2rem;
+  border-radius: 999px;
+  border: none;
+  position: relative;
+  text-transform: uppercase;
+
+  box-shadow:
+    0 0 18px rgba(168,255,0,0.9),
+    0 0 36px rgba(123,0,255,0.8);
+
+  animation: neonPulse 1.6s infinite ease-in-out;
+}
+
+/* Hover = BIG POP */
+.actions.special .button.large:hover {
+  transform: scale(1.15);
+  box-shadow:
+    0 0 35px rgba(168,255,0,1),
+    0 0 70px rgba(123,0,255,1);
+}
+
+/* Glow pulse animation */
+@keyframes neonPulse {
+  0% {
+    box-shadow:
+      0 0 10px rgba(168,255,0,0.8),
+      0 0 20px rgba(123,0,255,0.6);
+  }
+  60% {
+    box-shadow:
+      0 0 45px rgba(168,255,0,0),
+      0 0 70px rgba(123,0,255,0);
+  }
+  100% {
+    box-shadow:
+      0 0 10px rgba(168,255,0,0),
+      0 0 20px rgba(123,0,255,0);
+  }
+}
+
 
 </style>
 
@@ -735,6 +785,7 @@ Our skilled polishing specialists use premium compounds, and proven techniques t
 
 	</body>
 </html>
+
 
 
 
