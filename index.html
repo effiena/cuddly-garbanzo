@@ -366,48 +366,6 @@ header ul.actions li a.button.icon.fa-arrow-down {
   animation: bounce 2s infinite;
 }
 
-/* ===============================
-   FORCE ARROW TO BOTTOM OF HEADER
-   =============================== */
-
-#header {
-    position: relative;
-    padding-bottom: 80px; /* space for arrow */
-}
-
-/* ONLY target the arrow actions */
-#header > ul.actions:not(.special) {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-/* Clean spacing */
-#header > ul.actions:not(.special) li {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-/* Arrow styling */
-#header > ul.actions:not(.special) a {
-    margin: 0 !important;
-    padding: 0 !important;
-    font-size: 2rem;
-}
-
-/* Bounce animation */
-@keyframes arrowBounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(-8px); }
-}
-
-#header > ul.actions:not(.special) {
-    animation: arrowBounce 2s infinite;
-}
-
 
 
 </style>
@@ -680,6 +638,7 @@ Our skilled polishing specialists use premium compounds, and proven techniques t
 
 	</body>
 </html>
+
 
 
 
