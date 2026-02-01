@@ -314,6 +314,26 @@
   }
 }
 
+	.actions.special .button.large {
+  position: relative; /* make it a container for the car */
+  overflow: hidden;   /* hide the car outside */
+}
+
+.actions.special .button.large .car {
+  position: absolute;
+  left: -30px; /* start off the button */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem; /* car size */
+  animation: carMove 3s linear infinite;
+}
+
+@keyframes carMove {
+  0% { left: -30px; }
+  50% { left: calc(100% + 30px); } /* move across button */
+  100% { left: -30px; }            /* loop back */
+}
+
 
 </style>
 
@@ -399,7 +419,8 @@ Our skilled polishing specialists use premium compounds, and proven techniques t
 								       style="width:500px; display:block;" /></a>
 								<ul class="actions special">
 									<li>
-										<a href="https://forms.gle/Wich1kcJajTjSnwB7" target="_blank" class="button large">BOOK WITH US</a>
+										<a href="https://forms.gle/Wich1kcJajTjSnwB7" target="_blank" class="button large">BOOK WITH US
+										<span class="car">&#128663;</span></a>
 									</li>
 								</ul>
 							</article>
@@ -790,6 +811,7 @@ Our skilled polishing specialists use premium compounds, and proven techniques t
 
 	</body>
 </html>
+
 
 
 
