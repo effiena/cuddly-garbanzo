@@ -315,58 +315,6 @@
   }
 }
 
-/* Make header relative so arrow can be positioned */
-header {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 20px; /* top/bottom padding for content */
-    text-align: center;
-}
-
-/* Remove spacing from paragraph */
-header p {
-    margin: 0;
-}
-
-/* Position the arrow at the bottom of the header */
-header ul.actions {
-    position: absolute;
-    bottom: 10px;       /* distance from bottom of header */
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-/* Remove spacing from list item */
-header ul.actions li {
-    margin: 0;
-    padding: 0;
-}
-
-/* Style the arrow button */
-header ul.actions li a.button.icon.fa-arrow-down {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    font-size: 2rem; /* make arrow larger if needed */
-}
-
-	@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-  40% { transform: translateX(-50%) translateY(-10px); }
-  60% { transform: translateX(-50%) translateY(-5px); }
-}
-
-header ul.actions li a.button.icon.fa-arrow-down {
-  animation: bounce 2s infinite;
-}
-
-
 
 </style>
 						<p>We Restore, We Protect & We Make Sure Your Car Shines Like New
@@ -638,6 +586,7 @@ Our skilled polishing specialists use premium compounds, and proven techniques t
 
 	</body>
 </html>
+
 
 
 
