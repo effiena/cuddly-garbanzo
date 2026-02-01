@@ -265,10 +265,11 @@
    ===================================== */
 
 .actions.special .button.large {
-  background: linear-gradient(135deg, #a8ff00, #7b00ff) !important;
-  color: #0b0b0b !important;
-  font-weight: 900;
-  letter-spacing: 0.18em;
+  background: linear-gradient(135deg, #8a79ff, #4a90e2) !important; /* soft purple to blue */
+  color: #f0f0ff !important; /* very light text for contrast */
+  font-weight: 700;
+  font-size: 1.8rem;       /* <-- Increased font size */
+  letter-spacing: 0.15em;
   padding: 1.3rem 3.2rem;
   border-radius: 999px;
   border: none;
@@ -276,44 +277,41 @@
   text-transform: uppercase;
 
   box-shadow:
-    0 0 18px rgba(168,255,0,0.9),
-    0 0 36px rgba(123,0,255,0.8);
+    0 0 18px rgba(138,121,255,0.8),
+    0 0 36px rgba(74,144,226,0.7);
 
   animation: neonPulse 1.6s infinite ease-in-out;
-}
 
-/* Hover = BIG POP */
-.actions.special .button.large:hover {
-  transform: scale(1.15);
-  box-shadow:
-    0 0 35px rgba(168,255,0,1),
-    0 0 70px rgba(123,0,255,1);
-}
-
-/* Glow pulse animation */
-@keyframes neonPulse {
-  0% {
-    box-shadow:
-      0 0 10px rgba(168,255,0,0.8),
-      0 0 20px rgba(123,0,255,0.6);
-  }
-  60% {
-    box-shadow:
-      0 0 45px rgba(168,255,0,0),
-      0 0 70px rgba(123,0,255,0);
-  }
-  100% {
-    box-shadow:
-      0 0 10px rgba(168,255,0,0),
-      0 0 20px rgba(123,0,255,0);
-  }
-}
-
-.actions.special .button.large {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   line-height: 1;
+  min-height: 64px; /* optional for perfect vertical alignment */
+}
+
+.actions.special .button.large:hover {
+  transform: scale(1.15);
+  box-shadow:
+    0 0 35px rgba(138,121,255,1),
+    0 0 70px rgba(74,144,226,1);
+}
+
+@keyframes neonPulse {
+  0% {
+    box-shadow:
+      0 0 10px rgba(138,121,255,0.6),
+      0 0 20px rgba(74,144,226,0.5);
+  }
+  60% {
+    box-shadow:
+      0 0 45px rgba(138,121,255,0),
+      0 0 70px rgba(74,144,226,0);
+  }
+  100% {
+    box-shadow:
+      0 0 10px rgba(138,121,255,0),
+      0 0 20px rgba(74,144,226,0);
+  }
 }
 
 </style>
@@ -400,7 +398,7 @@ Our skilled polishing specialists use premium compounds, and proven techniques t
 								       style="width:500px; display:block;" /></a>
 								<ul class="actions special">
 									<li>
-										<a href="https://forms.gle/Wich1kcJajTjSnwB7" target="_blank" class="button large">BOOK APPOINTMENT</a>
+										<a href="https://forms.gle/Wich1kcJajTjSnwB7" target="_blank" class="button large">BOOK WITH US</a>
 									</li>
 								</ul>
 							</article>
@@ -791,6 +789,7 @@ Our skilled polishing specialists use premium compounds, and proven techniques t
 
 	</body>
 </html>
+
 
 
 
